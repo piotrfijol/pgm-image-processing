@@ -158,11 +158,10 @@ void drawTextFrame(string text, char character)
 }
 
 
-int main()
+int main(int argc, char** argv)
 {
-	PGM::processFile(pgmImage, "cat.pgm");
+	PGM::processFile(pgmImage, argv[1]);
 	nShade = pgmImage.maxVal / (SHADES - 1);
-
 
 	drawTextFrame("Oryginalny obraz", '#');
 	short int** obraz = pgmImage.data;
@@ -179,7 +178,7 @@ int main()
 	drawTextFrame("Otwarcie", '#');
 	showImage(imageDilation(obrazErozja));
 
-	drawTextFrame("Zamkniêcie", '#');
+	drawTextFrame("Zamkniï¿½cie", '#');
 	showImage(imageErusion(obrazDylatacja));
 
 	return 0;
