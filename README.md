@@ -1,7 +1,7 @@
 # pgm-image-processing
 
 It was a college project where we had to implement a simple image erosion and dilation on an array of 1's and 0's.
-But after I finished the project I decided I'll push it a step further and I created a PGM to ASCII converter that also includes erosion and dilation (it produces
+But after I finished the project I decided I'll push it a step further and so I created a PGM to ASCII converter that also includes erosion and dilation (it produces
 a few results).
 
 ## Results
